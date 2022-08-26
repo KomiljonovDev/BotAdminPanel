@@ -14,7 +14,7 @@
 
 	    protected $token;
 	    function bot($method, $datas=[]){
-			$url = "https://api.telegram.org/bot1512419250:AAHRT2TPxtPZKiV6YEjWikGg2ez2HG8ClGo/".$method;
+			$url = "https://api.telegram.org/bot" . "BOT TOKEN" . "/".$method;
 			$ch = curl_init();
 			curl_setopt($ch, CURLOPT_URL, $url);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
