@@ -1,7 +1,9 @@
 <?php
 	if (!is_null($update)) {
+		if (file_exists('helpers/admin/json/' . $fromid . '.json')) {
+			$admin = json_decode(file_get_contents('helpers/admin/json/' . $fromid . '.json'));
+		}
 		$admins = json_decode(file_get_contents('config/json/admins.json'));
-		$admin = json_decode(file_get_contents('helpers/admin/json/' . $fromid . '.json'));
 		$home_keyboard = json_encode([
 			'inline_keyboard'=>[
 				[['text'=>"Admin qo'shish", 'callback_data'=>'add_admin'],['text'=>"Admin o'chirish", 'callback_data'=>'delete_admin'],],

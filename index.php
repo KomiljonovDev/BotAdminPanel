@@ -52,7 +52,7 @@
             $user_lang = lang($fromid);
             if ($type == 'private') {
                 if ($text == '/start') {
-                    $myUser = myUser(['fromid','name','user','chat_type','lang','search_word','del'],[$fromid,$full_name,$user,'private','','',0]);
+                    $myUser = myUser(['fromid','name','user','chat_type','lang','del'],[$fromid,$full_name,$user,'private','',0]);
                     if (channel($fromid)) {
                         if ($myUser) {
                             bot('sendMessage',[
@@ -90,7 +90,7 @@
                 }
             }else{
                 if ($text == "/start") {
-                    myUser(['fromid','name','user','chat_type','lang','search_word','del'],[$chat_id,$title,$chatuser,'group','','',0]);
+                    myUser(['fromid','name','user','chat_type','lang','del'],[$chat_id,$title,$chatuser,'group','',0]);
                 }
             }
         }else if(!is_null($update->callback_query)){
