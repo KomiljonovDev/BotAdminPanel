@@ -24,6 +24,14 @@
             ],
         ]);
         if ($user->num_rows) {
+            if (mysqli_fetch_assoc($user)['del'] == '1') {
+                $db->update('users',[
+                    'del'=>0,
+                ],[
+                    'fromid'=>$myUser[0],
+                    'cn'=>'='
+                ]);
+            }
             return 1;
         }
         $dbInsert = [];

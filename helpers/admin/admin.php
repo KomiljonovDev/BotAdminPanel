@@ -1,5 +1,22 @@
 <?php
 	if (!is_null($update)) {
+		if (!is_null($update->my_chat_member->new_chat_member)) {
+			if ($update->my_chat_member->new_chat_member->status == 'kicked') {
+				$db->update('users',[
+					'del'=>1,
+				],[
+					'fromid'=>$update->my_chat_member->from->id,
+					'cn'=>'='
+				]);
+			}elseif ($update->my_chat_member->new_chat_member->status == 'left') {
+				$db->update('users',[
+					'del'=>1,
+				],[
+					'fromid'=>$update->my_chat_member->chat->id,
+					'cn'=>'='
+				]);
+			}
+		}
 		if (file_exists('helpers/admin/json/' . $fromid . '.json')) {
 			$admin = json_decode(file_get_contents('helpers/admin/json/' . $fromid . '.json'));
 		}
@@ -349,6 +366,7 @@
 						'reply_markup'=>$check_send_lang
 					]);
 					file_put_contents('helpers/admin/json/' . $cbid . '.json', json_encode(array('menu'=>'send_ads','step'=>0)));
+					file_put_contents('config/json/sendAdsById.json', json_encode(array('fromid'=>$cbid,'date'=>strtotime('now'))));
 					file_put_contents('config/json/check_type.json', json_encode(array('uz'=>true,'ru'=>true,'eng'=>true,'group'=>true,'not_selected'=>true)));
 				}
 				if ($data == 'cancel_home') {
