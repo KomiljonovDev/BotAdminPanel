@@ -5,6 +5,7 @@ Telegram Bot uchun qulay admin panel.
 ![](https://okdeveloper.uz/okdeveloper/tgbots/bot/screens/photo_2022-08-26_11-02-51.jpg)
 ![](https://okdeveloper.uz/okdeveloper/tgbots/bot/screens/photo_2022-08-26_11-03-20.jpg)
 ![](https://okdeveloper.uz/okdeveloper/tgbots/bot/screens/photo_2022-08-26_11-03-46.jpg)
+![](https://okdeveloper.uz/okdeveloper/tgbots/bot/screens/photo_2022-09-19_18-47-24.jpg)
 - Botga admin qo'shish, o'chirish
 - Majburiy a'zolik uchun kanal qo'shish, o'chirish
 - Majburiy a'zolik On va Off rejimga o'tkazish
