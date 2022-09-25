@@ -2,7 +2,7 @@
 Telegram Bot uchun qulay admin panel.
 # Imkoniyatlar
 ![](https://okdeveloper.uz/okdeveloper/tgbots/bot/screens/photo_2022-08-26_11-02-15.jpg)
-![](https://okdeveloper.uz/okdeveloper/tgbots/bot/screens/photo_2022-09-25_13-39-19.jpg)
+![](https://okdeveloper.uz/okdeveloper/tgbots/bot/screens/photo_2022-09-25_13-47-52.jpg)
 ![](https://okdeveloper.uz/okdeveloper/tgbots/bot/screens/photo_2022-08-26_11-03-20.jpg)
 ![](https://okdeveloper.uz/okdeveloper/tgbots/bot/screens/photo_2022-08-26_11-03-46.jpg)
 ![](https://okdeveloper.uz/okdeveloper/tgbots/bot/screens/photo_2022-09-19_18-47-24.jpg)
