@@ -1,4 +1,11 @@
 <?php
+    /**
+        * 
+        * @author https://github.com/KomiljonovDev/, 
+        * @author https://t.me/GoldCoderUz, 
+        * @author https://t.me/uzokdeveloper, 
+        * @author https://t.me/komiljonovdev,
+    */
     require('./config/config.php');
     $db = new dbmysqli;
     $db->dbConnect();
@@ -89,8 +96,13 @@
                     }
                 }
             }else{
+                $user_lang = lang($chat_id);
                 if ($text == "/start") {
                     myUser(['fromid','name','user','chat_type','lang','del'],[$chat_id,$title,$chatuser,'group','',0]);
+                    bot('sendMessage',[
+                        'chat_id'=>$chat_id,
+                        'text'=>$user_lang->start,
+                    ]);
                 }
             }
         }else if(!is_null($update->callback_query)){
