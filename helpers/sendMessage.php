@@ -62,11 +62,14 @@
 				file_put_contents('helpers/send_start.txt', $end);
 			}else{
 				$sendAdsById = json_decode(file_get_contents('config/json/sendAdsById.json'));
-				bot('sendMessage',[
-					'chat_id'=>$sendMessagetype->from_chat_id,
-					'text'=>'<b><a href="tg://user?id=' . $sendAdsById->fromid . '">Admin</a> tomonidan ' . date('Y-m-d H:i') . ' da yuburilgan reklama yakunlandi.</b>',
-					'parse_mode'=>'html'
-				]);
+				$admins = json_decode(file_get_contents('config/json/admins.json'));
+				foreach ($admins as $key => $value) {
+					bot('sendMessage',[
+						'chat_id'=>$value,
+						'text'=>'<b><a href="tg://user?id=' . $sendAdsById->fromid . '">Admin</a> tomonidan ' . date('Y-m-d H:i') . ' da yuburilgan reklama yakunlandi.</b>',
+						'parse_mode'=>'html'
+					]);
+				}
 				$sendMessageCheck_type->uz = true;
 				$sendMessageCheck_type->ru = true;
 				$sendMessageCheck_type->eng = true;
