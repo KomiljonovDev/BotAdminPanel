@@ -106,8 +106,8 @@
                 }
             }
         }else if(!is_null($update->callback_query)){
-            if (channel($cbid)) {
-                if ($ctype == 'private') {
+            if ($ctype == 'private') {
+                if (channel($cbid)) {
                     $user_lang = lang($cbid);
                     if ($data == 'res') {
                         bot('editMessageText',[
