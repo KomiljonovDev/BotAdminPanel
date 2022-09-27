@@ -5,6 +5,7 @@
         * @author https://t.me/GoldCoderUz, 
         * @author https://t.me/uzokdeveloper, 
         * @author https://t.me/komiljonovdev,
+        * 
     */
     require('./config/config.php');
     $db = new dbmysqli;
