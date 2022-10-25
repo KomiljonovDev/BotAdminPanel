@@ -215,7 +215,7 @@
 				    				'reply_to_message_id'=>$miid+1,
 				    				'reply_markup'=>$calncel_send_ads
 				    			]);
-				    			file_put_contents('config/json/sendMessage.json', json_encode(array('from_chat_id' => $fromid, 'message_id' => $miid, 'reply_markup' => $update->reply_markup)));
+				    			file_put_contents('config/json/sendMessage.json', json_encode(array('from_chat_id' => $fromid, 'message_id' => $miid, 'reply_markup' => $message->reply_markup)));
 			    			}else{
 			    				bot('copyMessage',[
 				    				'chat_id'=>$fromid,

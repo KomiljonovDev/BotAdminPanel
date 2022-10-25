@@ -38,10 +38,6 @@
 				if ($sendMessagetype->message_id) {
 					if (!is_null($sendMessagetype->reply_markup)) {
 						foreach ($users as $key => $user) {
-							bot('sendMessage',[
-								'chat_id'=>$user['fromid'],
-								'text'=>"reply is true"
-							]);
 							bot('copyMessage',[
 			    				'chat_id'=>$user['fromid'],
 			    				'from_chat_id'=>$sendMessagetype->from_chat_id,
