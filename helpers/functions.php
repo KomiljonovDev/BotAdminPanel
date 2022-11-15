@@ -122,6 +122,8 @@
                                 'inline_keyboard'=>$key
                             ]),
                         ]);
+                    }else{
+                        return true;
                     }
                     if (!is_null($mid)) {
                         bot('editMessageText',[
