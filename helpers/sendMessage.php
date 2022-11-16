@@ -62,7 +62,7 @@
 				foreach ($admins as $key => $value) {
 					bot('sendMessage',[
 						'chat_id'=>$value,
-						'text'=>'<b><a href="tg://user?id=' . $sendAdsById->fromid . '">Admin</a> tomonidan ' . date('Y-m-d H:i') . ' da yuburilgan reklama yakunlandi.</b>',
+						'text'=>'<b><a href="tg://user?id=' . $sendAdsById->fromid . '">Admin</a> tomonidan ' . date('Y-m-d H:i', $sendAdsById->date) . ' da yuburilgan reklama yakunlandi.</b>',
 						'parse_mode'=>'html'
 					]);
 				}
