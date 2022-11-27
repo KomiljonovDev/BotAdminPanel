@@ -9,10 +9,10 @@ Telegram Bot uchun qulay admin panel.
 - Botga admin qo'shish, o'chirish
 - Majburiy a'zolik uchun kanal qo'shish, o'chirish
 - Majburiy a'zolik On va Off rejimga o'tkazish
-- Reklama yuborish, bot 3 ta tilda ishlashi ham hisobga olingan, reklamani foydalanuvchi tiliga qarab fodalanuvchi va guruhlarga yuborish
+- Reklama yuborish, bot 3 ta tilda ishlashi ham hisobga olingan, reklamani foydalanuvchi tiliga qarab foydalanuvchi va guruhlarga yuborish
 - Reklama yuborish cron qilib sekinlatilgan holatda aniq ishlaydi
 # O'rnatish va ishatish
-1. Barcha fayllarni serverga ko'chiriladi
+1. Barcha fayllar serverga ko'chiriladi
 2. `index.php` faylidagi API_KEY o'zgarmasga va `config/config.php` faylidagi `bot` funksiyasiga Bot token kiritiladi
 3. `config/dbConfig.php` fayliga baza ma'lumotlari kiritiladi
 4. `bot.sql` fayliga ma'lumotlar bazasi nomi yoziladi
