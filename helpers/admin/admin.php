@@ -61,6 +61,11 @@
 		            $active_users = 0;
 		            $only_groups = 0;
 		            $active_groups = 0;
+
+		            $this_year = 0;
+		            $this_month = 0;
+		            $yesterday = 0;
+		            $this_day = 0;
 		            foreach ($users as $key => $value) {
 		                if ($value['chat_type'] == 'private') {
 		                    $only_users+=1;
@@ -73,10 +78,16 @@
 		                        $active_groups+=1;
 		                    }
 		                }
+		                (date('Y') == date('Y',$value['created_at'])) ? $this_year++ : '';
+		                (date('m') == date('m',$value['created_at']) && date('Y') == date('Y',$value['created_at'])) ? $this_month++ : '';
+		                (date('d') == date('d',$value['created_at']) && date('m') == date('m',$value['created_at']) && date('Y') == date('Y',$value['created_at'])) ? $this_day++ : '';
+		                (date('d',strtotime('-1 day')) == date('d',$value['created_at']) && date('m') == date('m',$value['created_at']) && date('Y') == date('Y',$value['created_at'])) ? $yesterday++ : '';
 		            }
+		            $sendded = file_get_contents('helpers/send_start.txt');
+		            $senddedCount = (int)$sendded ? "\n\nReklama yuborilib bo'lgan userlar: " . $sendded : false;
 		            bot('sendMessage',[
 		                'chat_id'=>$fromid,
-		                'text'=>"Bot statistikasi:\n\nGuruh va userlar: " . $users->num_rows  . "ta\nBarcha userlar: " . $only_users . "ta\nActive userlar: " . $active_users . "ta\nBarcha Guruhlar: " . $only_groups . "ta\nActive Guruhlar: " . $active_groups . "ta",
+		                'text'=>"Bot statistikasi:\n\nGuruh va userlar: " . $users->num_rows  . "ta\nBarcha userlar: " . $only_users . "ta\nActive userlar: " . $active_users . "ta\nBarcha Guruhlar: " . $only_groups . "ta\nActive Guruhlar: " . $active_groups . "ta\n\nBu yil botga qo'shilganlar: " . $this_year . "ta\nBu oy: " . $this_month . "\nKechagi kun: " . $yesterday . "ta" . "\nBu kun: " . $this_day . "ta" . $senddedCount,
 		                'reply_markup'=>$home_keyboard,
 		            ]);
 		        }else if(mb_stripos($text, '/del_admin_')!==false){

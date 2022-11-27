@@ -75,6 +75,7 @@
 				file_put_contents('config/json/sendAdsById.json', '');
 				file_put_contents('helpers/admin/json/' . $sendAdsById->fromid . '.json', '');
 				file_put_contents('helpers/send_start.txt', '0');
+				file_put_contents('helpers/send_confirm.txt', '');
 				file_put_contents('config/json/sendMessage.json', '');
 				file_put_contents('config/json/check_type.json', json_encode($sendMessageCheck_type));
 			}

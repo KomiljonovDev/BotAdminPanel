@@ -1,15 +1,16 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 4.9.7
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Aug 22, 2022 at 04:23 PM
--- Server version: 5.5.9
--- PHP Version: 7.4.5
+-- Host: localhost
+-- Generation Time: Nov 27, 2022 at 02:26 PM
+-- Server version: 5.7.21-20-beget-5.7.21-20-1-log
+-- PHP Version: 5.6.40
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
-SET time_zone = "+00:00";
+SET time_zone = "+05:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -25,6 +26,8 @@ SET time_zone = "+00:00";
 
 --
 -- Table structure for table `channels`
+--
+-- Creation: Nov 14, 2022 at 09:02 AM
 --
 
 CREATE TABLE `channels` (
@@ -45,6 +48,9 @@ INSERT INTO `channels` (`id`, `name`, `object`) VALUES
 --
 -- Table structure for table `users`
 --
+-- Creation: Nov 14, 2022 at 10:26 AM
+-- Last update: Nov 27, 2022 at 11:23 AM
+--
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
@@ -53,9 +59,13 @@ CREATE TABLE `users` (
   `user` varchar(40) NOT NULL DEFAULT '',
   `chat_type` varchar(20) NOT NULL DEFAULT 'private',
   `lang` varchar(20) NOT NULL DEFAULT '',
-  `del` varchar(5) NOT NULL DEFAULT '0'
+  `del` varchar(5) NOT NULL DEFAULT '0',
+  `created_at` varchar(80) NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Indexes for dumped tables
+--
 
 --
 -- Indexes for table `channels`
@@ -63,6 +73,7 @@ CREATE TABLE `users` (
 ALTER TABLE `channels`
   ADD PRIMARY KEY (`id`);
 
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -72,10 +83,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for dumped tables
 --
 
+--
+-- AUTO_INCREMENT for table `channels`
+--
 ALTER TABLE `channels`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
-
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
