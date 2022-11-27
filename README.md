@@ -1,11 +1,11 @@
 # BotAdminPanel
 Telegram Bot uchun qulay admin panel.
 # Imkoniyatlar
-![](https://okdeveloper.uz/okdeveloper/tgbots/bot/screens/photo_2022-08-26_11-02-15.jpg)
-![](https://okdeveloper.uz/okdeveloper/tgbots/bot/screens/photo_2022-09-25_13-47-52.jpg)
-![](https://okdeveloper.uz/okdeveloper/tgbots/bot/screens/photo_2022-08-26_11-03-20.jpg)
-![](https://okdeveloper.uz/okdeveloper/tgbots/bot/screens/photo_2022-08-26_11-03-46.jpg)
-![](https://okdeveloper.uz/okdeveloper/tgbots/bot/screens/photo_2022-09-19_18-47-24.jpg)
+![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/photo_2022-08-26_11-02-15.jpg)
+![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/photo_2022-09-25_13-47-52.jpg)
+![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/photo_2022-08-26_11-03-20.jpg)
+![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/photo_2022-08-26_11-03-46.jpg)
+![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/photo_2022-09-19_18-47-24.jpg)
 - Botga admin qo'shish, o'chirish
 - Majburiy a'zolik uchun kanal qo'shish, o'chirish
 - Majburiy a'zolik On va Off rejimga o'tkazish
@@ -23,4 +23,4 @@ Telegram Bot uchun qulay admin panel.
 9. Har qanday callback_query ga javob berish uchun, $update->callback_query null bo'lmagan va channel($cbid) funksiyasidan keyin yoziladi
 10. Qolgan update larga ham shu shablonda javob beriladi
 11. Bot turgan asosiy `index.php` fayli cron va webhook qilinadi
-12. `https://yourdomain.com./path/index.php?sendMessage=true` kabi reklama yuborish tezligiga ko'ra, ixtiyoriy vaqt oralig'ida cron qilinadi  
+12. `https://yourdomain.com./path/index.php?sendMessage=true` kabi reklama yuborish tezligiga ko'ra, ixtiyoriy vaqt oralig'ida cron qilinadi
