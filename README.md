@@ -1,11 +1,11 @@
 # BotAdminPanel
 Telegram Bot uchun qulay admin panel.
 # Imkoniyatlar
-![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/photo_2022-08-26_11-02-15.jpg)
-![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/photo_2022-09-25_13-47-52.jpg)
-![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/photo_2022-08-26_11-03-20.jpg)
-![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/photo_2022-08-26_11-03-46.jpg)
-![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/photo_2022-09-19_18-47-24.jpg)
+![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/admin.jpg)
+![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/addAdmin.jpg)
+![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/deleteAdmin.jpg)
+![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/channel.jpg)
+![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/ads.jpg)
 - Botga admin qo'shish, o'chirish
 - Majburiy a'zolik uchun kanal qo'shish, o'chirish
 - Majburiy a'zolik On va Off rejimga o'tkazish
