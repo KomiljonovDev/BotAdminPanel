@@ -1,7 +1,7 @@
 # BotAdminPanel
 Telegram Bot uchun qulay admin panel.
 # Imkoniyatlar
-![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/admin.jpg)
+![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/Admin.jpg)
 ![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/addAdmin.jpg)
 ![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/deleteAdmin.jpg)
 ![](https://komiljonovdev.uz/okdeveloper/tgbots/Bot%20And%20Details/assets/screens/channel.jpg)
